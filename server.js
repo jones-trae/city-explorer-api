@@ -4,20 +4,24 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
+const { handleGetAbout, handleGetHome} = require('./routes.js');
+
+//globals
 const PORT = process.env.PORT;
-
-
-
 const app = express();
 
+
+//midware
 app.use(cors());
 
 
 //routes
-app.get('/', request, response => 
-console.log('any string'));
-response.status(200).send('Hiiii');
+app.get('/', handleGetHome);
 
+app.get('/about', handleGetAbout);
+
+
+//handler functions
 
 
 //listener
