@@ -14,7 +14,9 @@ app.use(cors());
 
 
 //routes
-app.get('/', request, response => console.log('any string'));
+app.get('/', request, response => 
+console.log('any string'));
+response.status(200).send('Hiiii');
 
 
 
