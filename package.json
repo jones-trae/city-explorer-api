@@ -1,0 +1,21 @@
+{
+  "name": "city-explorer-api",
+  "version": "0.0.1",
+  "description": "inintial",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "good",
+    "stuff"
+  ],
+  "author": "Valton Jones",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
