@@ -11,3 +11,9 @@ function handleGetHome(request, response) {
 
 module.exports = { handleGetAbout, handleGetHome };
 
+//https://api.themoviedb.org/3/search/company?api_key=<<api_key>>&page=1
+function handleGetMovies(req, res) {
+  res.send('Coming soon');
+}
+
+module.exports = { handleGetAbout, handleGetHome, handleGetMovies};

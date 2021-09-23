@@ -4,8 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
-const { handleGetAbout, handleGetHome} = require('./routes.js');
-
+const handlerFunctions = require('./routes.js');
 //globals
 const PORT = process.env.PORT;
 const app = express();
@@ -16,9 +15,11 @@ app.use(cors());
 
 
 //routes
-app.get('/', handleGetHome);
+app.get('/', handlerFunctions.handleGetHome);
 
-app.get('/about', handleGetAbout);
+app.get('/about', handlerFunctions.handleGetAbout);
+
+app.get(('/movies'), handlerFunctions.handleGetMovies
 
 
 //handler functions
